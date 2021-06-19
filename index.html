@@ -12,17 +12,36 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
+    <div class="progress">
+      <div class="progress__bar"></div>
+    </div>
     <header class="header">
-      <div class="header__progress">
-        <div class="header__progress-bar"></div>
-      </div>
       <div class="container">
         <div class="header__content">
-          <img src="assets/icons/logo-zenit.svg" alt="Zenit logo">
+          <a href="#" class="logo">
+            <img src="assets/icons/logo-zenit.svg" alt="Zenit logo">
+          </a>
           <nav class="header__nav">
-            
+            <a href="/" class="header__nav-link">О компании</a>
+            <a href="/" class="header__nav-link">Услуги</a>
+            <a href="/" class="header__nav-link">Проекты</a>
+            <a href="/" class="header__nav-link">Лицензии</a>
+            <a href="/" class="header__nav-link">Вакансии</a>
+            <a href="/" class="header__nav-link">Контакты</a>
           </nav>
           <!-- /.header__nav -->
+          <div class="header__call">
+            <a href="tel:+74232979775" class="header__phone">
+              <img src="assets/icons/icon-phone.svg" alt="Phone icon">
+              <span>+7 (423) 2 97 97 75</span>
+            </a>
+            <button class="btn btn_order-call">Заказать звонок</button>
+          </div>
+          <!-- /.header__call -->
+          <div class="header__menu">
+            <span class="header__menu-icon"></span>
+          </div>
+          <!-- /.header__menu -->
         </div>
         <!-- /.header__content -->
       </div>
