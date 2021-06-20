@@ -17,3 +17,33 @@ window.addEventListener('keyup', (event) => {
     closeMenu();
   }
 }) 
+
+
+// Smooth scroll
+// Smooth scroll
+const scroll = new SmoothScroll('.header-nav__link[href*="#"], .up[href*="#"]');
+
+// Up arrow
+
+const upButton = document.querySelector('.up');
+
+const scrollShow = () => {
+  const scrolled = window.pageYOffset;
+  
+  const coords = document.documentElement.clientHeight;
+  if (scrolled > coords) {
+    upButton.classList.add('up_show');
+  }
+  if (scrolled < coords) {
+    upButton.classList.remove('up_show');
+  }
+};
+const scrollBack = () => {
+  if (window.pageYOffset > 0) {
+    window.scrollBy(0, -80);
+    setTimeout(scrollBack, 0);
+  }
+};
+
+window.addEventListener('scroll', scrollShow);
+upButton.addEventListener('click', scrollBack);
