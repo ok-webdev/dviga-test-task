@@ -19,7 +19,30 @@ window.addEventListener('keyup', (event) => {
 }) 
 
 
-// Smooth scroll
+// Tabs
+const tabClick = (idContainer, idElement) => {
+  let dataAttr = `[data-${idContainer}`;
+  for (let item of document.querySelectorAll(`${dataAttr}-name`)) {
+    item.classList.remove('about__nav-link_active');
+  }
+  for (let item of document.querySelectorAll(`${dataAttr}-tab`)) {
+    item.classList.remove('about__tab_active');
+  }
+  
+  document.querySelector(`${dataAttr}-name=${idElement}]`).classList.add('about__nav-link_active');
+  document.querySelector(`${dataAttr}-tab=${idElement}]`).classList.add('about__tab_active');
+
+};
+
+let tabsName = document.querySelectorAll('.about__nav-link');
+
+tabsName.forEach((tab) => {
+  tab.addEventListener('click', (event) => {
+    tabClick(event.target.parentElement.id, event.target.dataset.aboutTabsName);
+  });
+});
+
+
 // Smooth scroll
 const scroll = new SmoothScroll('.header-nav__link[href*="#"], .up[href*="#"]');
 

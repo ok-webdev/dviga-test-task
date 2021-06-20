@@ -17,4 +17,10 @@
       }
     }
   }
+  &__tab{
+    display: none;
+    &_active{
+      display: block;
+    }
+  }
 }
