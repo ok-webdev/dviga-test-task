@@ -44,7 +44,7 @@
         margin-right: 5px;
         &:hover {
             background: var(--blue);
-            border-color: blue;
+            border-color: var(--blue);
             & path {
                 fill: var(--white-bg);
             }
@@ -63,7 +63,7 @@
         margin-left: 5px;
         &:hover {
           background: var(--blue);
-          border-color: blue;
+          border-color: var(--blue);
           & path {
               fill: var(--white-bg);
           }
