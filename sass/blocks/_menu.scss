@@ -1,0 +1,208 @@
+.menu {
+    &__content {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__icon {
+        display: block;
+        width: 30px;
+        height: 14px;
+        position: relative;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            background: var(--black);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .3s;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            background: var(--black);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all .3s;
+        }
+    }
+
+    &__popup {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: -6px;
+        transform: scale(0);
+        opacity: 0;
+        transition: all .5s;
+
+        &.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    &__left {
+        width: 100%;
+        background: url(../assets/icons/bg-crosses.svg) top right no-repeat, url(../assets/icons/bg-crosses.svg) top 60% right no-repeat, var(--white-bg);
+        padding: 30px 140px 40px 90px;
+        display: flex;
+        justify-content: flex-end;
+
+        &-content {
+            max-width: 620px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 120px;
+    }
+
+    &__sections {
+        &-item {
+            display: block;
+            font-size: 3.125rem;
+            font-weight: 700;
+            letter-spacing: 2%;
+            color: var(--black);
+            text-decoration: none;
+            margin-top: 27px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:hover {
+                color: var(--blue);
+            }
+        }
+    }
+
+    &__tabs {
+        margin-left: 90px;
+
+        &-item {
+            display: block;
+            font-size: 2rem;
+            font-weight: 500;
+            color: var(--black);
+            text-decoration: none;
+            margin-top: 12px;
+
+            &:hover {
+                color: var(--blue);
+            }
+        }
+    }
+
+    &__right {
+        width: 100%;
+        background: url('../assets/icons/bg-cross-white.svg'), var(--blue);
+
+        padding: 35px 90px 44px 197px;
+
+        &-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
+    }
+
+    &__call {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 52px;
+    }
+
+    &__phone {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: var(--white-bg);
+        text-decoration: none;
+        margin-left: 10px;
+    }
+
+    &__close {
+        cursor: pointer;
+    }
+
+    &__contacts {
+        margin-top: 107px;
+    }
+
+    &__label {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--white-bg);
+        opacity: 0.7;
+        margin-bottom: 10px;
+    }
+
+    &__address {
+        & address {
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 500;
+            color: var(--white-bg);
+        }
+    }
+
+    &__feedback {
+        margin-top: 50px;
+
+        &-phone {
+            display: block;
+            font-size: 2rem;
+            font-weight: 500;
+            color: var(--white-bg);
+            text-decoration: none;
+        }
+
+        &-email {
+            display: block;
+            font-size: 2rem;
+            font-weight: 500;
+            color: var(--white-bg);
+            text-decoration: none;
+            margin-top: 10px;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        margin-top: 123px;
+    }
+
+    &__social {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44.25px;
+        height: 44.25px;
+        border-radius: 100%;
+        transition: all .5s;
+        &:hover {
+            background: var(--white-bg);
+
+            & path {
+                stroke: var(--blue);
+            }
+        }
+
+    }
+
+}

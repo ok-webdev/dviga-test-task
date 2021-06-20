@@ -1,5 +1,6 @@
-@import 'utils/fonts';
-@import 'utils/variables';
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/animations';
 
 *,
 *::after,
@@ -14,15 +15,20 @@ body{
 }
 
 .container {
-  width: 1260px;
+  max-width: 1260px;
   margin: 0 auto;
 }
 
 
 @import './blocks/btn';
+@import './blocks/title';
+@import './blocks/_download';
 
 @import './blocks/progress';
 @import './blocks/header';
+@import './blocks/_menu';
+@import './blocks/about';
+@import './blocks/footer';
 
 
 

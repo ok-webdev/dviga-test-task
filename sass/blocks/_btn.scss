@@ -7,5 +7,9 @@
     font-size: 0.875rem;
     font-weight: 600;
     color: var(--dark-gray);
+    &_menu{
+      color: var(--white-bg);
+      opacity: 0.7;
+    }
   }
 }
