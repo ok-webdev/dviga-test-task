@@ -1,0 +1,145 @@
+.general {
+
+    &__promo {
+        &-content {
+            background: url('../assets/images/bg_about-tab.png') left bottom 110px /23% no-repeat;
+            padding: 110px 0;
+        }
+
+        &-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 90px;
+
+            & h2 {
+                width: 40%;
+            }
+
+            & p {
+                width: 40%;
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 2rem;
+                color: var(--dark-gray);
+            }
+        }
+
+        &-middle {
+            display: flex;
+            justify-content: flex-end;
+
+            & img {
+                width: 80%;
+                box-shadow: -30px 30px var(--blue);
+            }
+        }
+
+        &-bottom {
+            margin-top: 135px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            & h2 {
+                width: 40%;
+            }
+
+            & p {
+                width: 40%;
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 2rem;
+                color: var(--dark-gray);
+                align-self: flex-end;
+                margin-top: 17%;
+            }
+        }
+    }
+
+    &__reputation {
+        background: url('../assets/images/bg-reputation.svg');
+
+        &-content {
+            padding: 280px 0 305px 0;
+
+            & h2 {
+                font-size: 4rem;
+                font-weight: 600;
+                color: var(--blue);
+                text-align: center;
+            }
+        }
+    }
+
+    &__staff {
+        background: var(--blue);
+
+        &-content {
+            padding: 97px 0 127px 0;
+
+            & h3 {
+                width: 60%;
+            }
+        }
+
+        &-items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 70px 140px;
+            margin-top: 82px;
+        }
+
+        &-item {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        &-text {
+            margin-left: 40px;
+
+            & p {
+                font-size: 1.125rem;
+                font-weight: 500;
+                line-height: 1.75rem;
+                color: var(--bg);
+                margin-top: 20px;
+            }
+        }
+    }
+
+    &__stages {
+        &-content {
+            background: url('../../assets/images/bg-stages.png') left top 32% no-repeat;
+            display: flex;
+            justify-content: flex-end;
+            padding: 176px 0 182px 0;
+        }
+
+        &-items {
+            width: 85%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        &-number {
+            width: 99px;
+            font-size: 5.375rem;
+            font-weight: 700;
+            color: var(--blue);
+        }
+
+        &-text {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--black);
+            margin-left: 30px;
+        }
+    }
+}

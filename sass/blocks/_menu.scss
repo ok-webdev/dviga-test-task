@@ -1,7 +1,7 @@
 .menu {
     &__content {
         display: flex;
-        justify-content: center;
+        margin-left: auto;
     }
 
     &__icon {
@@ -111,7 +111,9 @@
         background: url('../assets/icons/bg-cross-white.svg'), var(--blue);
 
         padding: 35px 90px 44px 197px;
-
+        &-content{
+          max-width: 600px;
+        }
         &-top {
             display: flex;
             align-items: flex-start;
@@ -183,6 +185,7 @@
     &__socials {
         display: flex;
         align-items: center;
+        justify-content: flex-end;
         margin-top: 123px;
     }
 
