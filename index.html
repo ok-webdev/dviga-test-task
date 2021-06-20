@@ -23,6 +23,10 @@
       href="favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
@@ -244,10 +248,7 @@
       </div>
       <!-- /.container -->
       <div class="about__tabs">
-        <div
-          class="general about__tab about__tab_active"
-          data-about-tabs-tab="general"
-        >
+        <div class="general about__tab about__tab_active" data-about-tabs-tab="general">
           <div class="general__promo">
             <div class="container">
               <div class="general__promo-content">
@@ -462,42 +463,120 @@
           <!-- /.general__stages -->
         </div>
         <!-- /.about__tab general-->
-        <div
-          class="team about__tab about__tab_active"
-          data-about-tabs-tab="team"
-        ><div class="container">
-          Команда в разработке
+        <div class="team about__tab" data-about-tabs-tab="team">
+          <div class="container">Команда в разработке</div>
+          <!-- /.container -->
         </div>
-        <!-- /.container --></div>
         <!-- /.about__tab team-->
         <div
-          class="clients about__tab about__tab_active"
+          class="clients about__tab"
           data-about-tabs-tab="clients"
         >
-        <div class="container">
-          Клиенты в разработке
-        </div>
-        <!-- /.container -->
+          <header class="clients__header">
+            <div class="container">
+              <div class="clients__header-content">
+                <h2 class="title title_h2">Нам доверяют лидеры отрасли.</h2>
+                <p>
+                  Полный цикл строительно-монтажных работ на объекте, от
+                  проектирования, фундамента до конечного объекта
+                </p>
+              </div>
+              <!-- /.clients__header-content -->
+            </div>
+          </header>
+          <!-- /.clients__header -->
+          <div class="clients__clients">
+            <div class="container">
+              <div class="clients__clients-content">
+                <div class="swiper-container clients__clients-slider">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper clients__clients-items">
+                    <!-- Slides -->
+                    <div class="swiper-slide clients__clients-item">
+                      <img
+                        src="assets/icons/icon-clients-osk.svg"
+                        alt="Объединённая строительная корпорация"
+                      />
+                    </div>
+                    <div class="swiper-slide clients__clients-item">
+                      <img
+                        src="assets/icons/icon-clients-maersk.svg"
+                        alt="Maersk"
+                      />
+                    </div>
+                    <div class="swiper-slide clients__clients-item">
+                      <img
+                        src="assets/icons/icon-clients-star.svg"
+                        alt="Звезда"
+                      />
+                    </div>
+                    <div class="swiper-slide clients__clients-item">
+                      <img
+                        src="assets/icons/icon-clients-rosneft.svg"
+                        alt="Роснефть"
+                      />
+                    </div>
+                    <div class="swiper-slide clients__clients-item">
+                      <img
+                        src="assets/icons/icon-clients-diss.svg"
+                        alt="Дисс"
+                      />
+                    </div>
+                    <div class="swiper-slide clients__clients-item">
+                      <img
+                        src="assets/icons/icon-clients-dalzavod.svg"
+                        alt="Дальзавод"
+                      />
+                    </div>
+                  </div>
+                  <div class="clients__navigation">
+                    <div class="clients__prev">
+                      <svg
+                        width="26"
+                        height="15"
+                        viewBox="0 0 26 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.5 7.46484L0.792893 6.75773L0.0857873 7.46484L0.792893 8.17195L1.5 7.46484ZM6.79289 14.1719C7.18342 14.5625 7.81658 14.5625 8.20711 14.1719C8.59763 13.7814 8.59763 13.1483 8.20711 12.7577L6.79289 14.1719ZM8.20711 2.17195C8.59763 1.78142 8.59763 1.14826 8.20711 0.757736C7.81658 0.367211 7.18342 0.367211 6.79289 0.757736L8.20711 2.17195ZM25.5 6.46484L1.5 6.46484L1.5 8.46484L25.5 8.46484L25.5 6.46484ZM0.792893 8.17195L6.79289 14.1719L8.20711 12.7577L2.20711 6.75774L0.792893 8.17195ZM2.20711 8.17195L8.20711 2.17195L6.79289 0.757736L0.792893 6.75773L2.20711 8.17195Z"
+                          fill="#44454A"
+                        />
+                      </svg>
+                    </div>
+                    <div class="clients__next">
+                      <svg
+                        width="26"
+                        height="15"
+                        viewBox="0 0 26 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.5 7.46484L0.792893 6.75773L0.0857873 7.46484L0.792893 8.17195L1.5 7.46484ZM6.79289 14.1719C7.18342 14.5625 7.81658 14.5625 8.20711 14.1719C8.59763 13.7814 8.59763 13.1483 8.20711 12.7577L6.79289 14.1719ZM8.20711 2.17195C8.59763 1.78142 8.59763 1.14826 8.20711 0.757736C7.81658 0.367211 7.18342 0.367211 6.79289 0.757736L8.20711 2.17195ZM25.5 6.46484L1.5 6.46484L1.5 8.46484L25.5 8.46484L25.5 6.46484ZM0.792893 8.17195L6.79289 14.1719L8.20711 12.7577L2.20711 6.75774L0.792893 8.17195ZM2.20711 8.17195L8.20711 2.17195L6.79289 0.757736L0.792893 6.75773L2.20711 8.17195Z"
+                          fill="#44454A"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <!-- /.clients__navigation -->
+                </div>
+              </div>
+              <!-- /.clients__clients-content -->
+            </div>
+            <!-- /.container -->
+          </div>
+          <!-- /.clients__clients -->
         </div>
         <!-- /.about__tab-content clients-->
-        <div
-          class="licenses about__tab about__tab_active"
-          data-about-tabs-tab="licenses"
-        >
-        <div class="container">
-          Лицензии в разработке
-        </div>
-        <!-- /.container -->
+        <div class="licenses about__tab" data-about-tabs-tab="licenses">
+          <div class="container">Лицензии в разработке</div>
+          <!-- /.container -->
         </div>
         <!-- /.about__tab licenses-->
-        <div
-          class="career about__tab about__tab_active"
-          data-about-tabs-tab="career"
-        >
-        <div class="container">
-          Вакансии в разработке
-        </div>
-        <!-- /.container -->
+        <div class="career about__tab" data-about-tabs-tab="career">
+          <div class="container">Вакансии в разработке</div>
+          <!-- /.container -->
         </div>
         <!-- /.about__tab career-->
       </div>
@@ -573,6 +652,7 @@
       <span>Наверх</span>
     </a>
     <!-- /.up -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/smooth-scroll.polyfills.min.js"></script>
     <script src="js/main.js"></script>
   </body>

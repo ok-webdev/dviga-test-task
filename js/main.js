@@ -70,3 +70,16 @@ const scrollBack = () => {
 
 window.addEventListener('scroll', scrollShow);
 upButton.addEventListener('click', scrollBack);
+
+// swiper 
+
+const swiper = new Swiper('.swiper-container', {
+  direction: 'horizontal',
+  slidesPerView: 6,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.clients__next',
+    prevEl: '.clients__prev',
+  },
+});
