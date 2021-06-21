@@ -54,12 +54,12 @@
     &__left {
         width: 100%;
         background: url(../assets/icons/bg-crosses.svg) top right no-repeat, url(../assets/icons/bg-crosses.svg) top 60% right no-repeat, var(--white-bg);
-        padding: 30px 140px 40px 90px;
+        padding: 1.875rem 8.75rem 2.5rem 5.625rem;
         display: flex;
         justify-content: flex-end;
 
         &-content {
-            max-width: 620px;
+            max-width: 38.75rem;
         }
     }
 
@@ -90,7 +90,7 @@
     }
 
     &__tabs {
-        margin-left: 90px;
+        margin-left: 5.625rem;
 
         &-item {
             display: block;
@@ -98,7 +98,7 @@
             font-weight: 500;
             color: var(--black);
             text-decoration: none;
-            margin-top: 12px;
+            margin-top: 0.75rem;
 
             &:hover {
                 color: var(--blue);
@@ -110,7 +110,7 @@
         width: 100%;
         background: url('../assets/icons/bg-cross-white.svg'), var(--blue);
 
-        padding: 35px 90px 44px 197px;
+        padding: 2.1875rem 5.625rem 2.75rem 12.3125rem;
         &-content{
           max-width: 600px;
         }
@@ -125,7 +125,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-right: 52px;
+        margin-right: 3.25rem;
     }
 
     &__phone {
@@ -133,7 +133,7 @@
         font-weight: 700;
         color: var(--white-bg);
         text-decoration: none;
-        margin-left: 10px;
+        margin-left: 0.625rem;
     }
 
     &__close {
@@ -141,7 +141,7 @@
     }
 
     &__contacts {
-        margin-top: 107px;
+        margin-top: 6.6875rem;
     }
 
     &__label {
@@ -149,7 +149,7 @@
         font-weight: 600;
         color: var(--white-bg);
         opacity: 0.7;
-        margin-bottom: 10px;
+        margin-bottom: 6.6875rem;
     }
 
     &__address {
@@ -162,7 +162,7 @@
     }
 
     &__feedback {
-        margin-top: 50px;
+        margin-top: 3.125rem;
 
         &-phone {
             display: block;
@@ -186,7 +186,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        margin-top: 123px;
+        margin-top: 7.6875rem;
     }
 
     &__social {

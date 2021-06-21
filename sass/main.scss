@@ -1,6 +1,5 @@
 @import './utils/fonts';
 @import './utils/variables';
-@import './utils/animations';
 
 *,
 *::after,
@@ -34,5 +33,7 @@ body{
 
 @import './blocks/footer';
 
+
+@import './utils/media';
 
 

@@ -24,7 +24,7 @@
   &__nav{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px 120px;
+    gap: 0.625rem 7.5rem;
     &-link{
       font-size: 1rem;
       font-weight: 600;
