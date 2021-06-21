@@ -3,13 +3,16 @@ window.addEventListener('DOMContentLoaded', () => {
   const menuBtn = document.querySelector('.menu__icon');
   const menu = document.querySelector('.menu__popup');
   const menuClose = document.querySelector('.menu__close');
+  const body = document.querySelector('body');
 
   function openMenu() {
     menu.classList.add('visible');
+    body.style.overflowY = 'hidden';
   }
 
   function closeMenu() {
     menu.classList.remove('visible');
+    body.style.overflowY = 'auto';
   }
 
   menuBtn.addEventListener('click', openMenu);
